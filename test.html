@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-1.11.1.min.js"></script>
+	<style>
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+		.div2{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2"></div>
+	</div>
+</body>
+<script>
+	$('.div1').delegate('.div2','click',function(){
+
+		$(this).html(1243);
+	})
+</script>
+</html>
